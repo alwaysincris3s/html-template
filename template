@@ -1,9 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lab Equipment</title>
+    <title>Admin Dashboard</title>
  
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
@@ -72,6 +73,43 @@
             font-family: cursive;
             text-align:center;
         }
+
+/* Ensure the logout option is hidden by default */
+.user-container {
+    position: relative;
+    display: inline-block;
+}
+
+.logout-option {
+    display: none;
+    position: absolute;
+    top: 100%; /* Places the logout option directly below the button */
+    right: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000; 
+    width: 120px;
+    text-align: center;
+}
+
+.user-container:hover .logout-option {
+    display: block; 
+}
+
+.logout-option a {
+    color: #000;
+    text-decoration: none;
+    padding: 5px 10px;
+    display: block; 
+}
+
+.logout-option a:hover {
+    background-color: #f0f0f0;
+}
+
+
     </style>
 </head>
 <body>
@@ -80,21 +118,22 @@
     <table class="headings">
         <tr>
             <td class="title" colspan="4"><h3>AMC Facility🤗</h3></td> 
-
-
             <td class="links">
                 <a href="url">Home</a>
                 <a href="url">Logs</a>
                 <a href="url">Inventory</a>
                 <a href="url">Student</a>
-                <a href="url">
+                <div class="user-container">
                     <button class="user"><i class="fas fa-user" aria-hidden="true"></i></button>
-                </a>
+                    <div class="logout-option">
+                        <a href="logout-url">Logout</a>
+                    </div>
+                </div>
             </td>
         </tr>
     </table>
-    
 </div>
+
 
 
 
