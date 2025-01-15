@@ -120,13 +120,11 @@
             <td class="title" colspan="4"><h3>AMC Facility🤗</h3></td> 
             <td class="links">
                 <a href="url">Home</a>
-                <a href="url">Logs</a>
-                <a href="url">Inventory</a>
-                <a href="url">Student</a>
+            
                 <div class="user-container">
                     <button class="user"><i class="fas fa-user" aria-hidden="true"></i></button>
                     <div class="logout-option">
-                        <a href="logout-url">Logout</a>
+                        <a href="/SWAP-P02-G02/logout.php">Logout</a>
                     </div>
                 </div>
             </td>
